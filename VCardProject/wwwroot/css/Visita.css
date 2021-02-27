@@ -1,0 +1,98 @@
+﻿main.container {
+    background: white;
+    width: 1920px;
+    height: 720px;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px #5514F5;
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cad {
+    margin-top: 2rem;
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 2rem;
+    /*background: linear-gradient(to left, #5514F5,#1377D4, #21EBA7);*/
+    background: black;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    border-radius: 50%;
+    transition: all 0.9s ease;
+    box-shadow: -13px 8px 0px 3px #5514f5;
+}
+
+    .cad:hover {
+        transition: all .8s;
+        /*opacity: 0.7;*/
+        /*color: #F2D9FF;*/
+        color: black;
+        /*    font-weight:bold;*/
+        letter-spacing: 2.0px;
+        /*background: linear-gradient(to left,#5514F5,#1377D4, #21EBA7);*/
+        background: white;
+        box-shadow: -8px 4px 0px -3px #5514f5;
+    }
+
+.find {
+    margin-top: 2rem;
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 2rem;
+    /*background: linear-gradient(to left, #5514F5,#1377D4, #21EBA7);*/
+    background: black;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    border-radius: 50%;
+    transition: all 0.9s ease;
+    box-shadow: 13px 8px 0px 3px #5514f5;
+}
+
+    .find:hover {
+        transition: all .8s;
+        /*opacity: 0.7;*/
+        /*color: #F2D9FF;*/
+        color: black;
+        /*    font-weight:bold;*/
+        letter-spacing: 2.0px;
+        /*background: linear-gradient(to left,#5514F5,#1377D4, #21EBA7);*/
+        background: white;
+        box-shadow: 8px 4px 0px -3px #5514f5;
+    }
+
+fieldset {
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 30px;
+    /*font-weight: bold;*/
+}

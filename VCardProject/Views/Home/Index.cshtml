@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "V-Card";
+    List<Pessoa> listapessoa1 = ViewBag.Preview;
+    List<Pessoa> listapessoa = ViewBag.SelectCliente;
+    List<Pessoa> listapessoa2 = ViewBag.SelectClientesPendentes;
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="~/css/Indexo.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main class="container">
+
+        <div class="text-center">
+            <h2>V-Card.</h2>
+        </div>
+        @{string vaiPara = ""; }
+        <form action=@vaiPara method="get" class="formulario-form">
+
+            <div class="input-field">
+                <label> Você é Administrador ou Visitante? </label>
+            </div>
+            <input type="submit" value="Administrador" formaction="/Home/Adm">
+            <input type="submit" value="Visitante" formaction="/Home/Visit"> <br />
+            
+
+
+        </form>
+    </main>
+</body>
+</html>

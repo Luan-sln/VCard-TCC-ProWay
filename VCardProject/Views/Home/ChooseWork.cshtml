@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    string temp = ViewBag.temp;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title></title>
+    <link href="~/css/Profissoes.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="corpo">
+        <div class="corpo-form">
+            <form method="post" class="form">
+                <div class="titulo-form">
+                    <strong>Serviços em Destaque</strong>
+                </div><br>
+                @{ 
+                    
+                <div class="btn" id="btn">
+                    <button class="btnTeste" formaction="/Home/Profissoes" @{temp = "Eletricista";} name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnTeste" formaction="/Home/Profissoes" @{temp = "Pintor"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnTeste" formaction="/Home/Profissoes"@{temp = "Marceneiro"; } name="inputRamo" value="@temp">@temp</button> <br><br /><br />
+
+                    <button class="btnTeste" formaction="/Home/Profissoes"@{temp = "Encanador"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnTeste" formaction="/Home/Profissoes" @{temp = "Arquiteto";} name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnTeste" formaction="/Home/Profissoes"@{temp = "Pedreiro"; } name="inputRamo" value="@temp">@temp</button>
+                </div><br><br><br>
+                }
+
+
+            </form>
+            <form action="/" method="post">
+
+                <div class="btnSec">
+                    <button class="btnSub" id="btnSub1"  formaction="/Home/Profissoes" @{temp = "Barbearia"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnSub" id="btnSub2"  formaction="/Home/Profissoes"@{temp = "Restaurante"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnSub" id="btnSub3"  formaction="/Home/Profissoes"@{temp = "Mecânica"; } name="inputRamo" value="@temp">@temp</button>
+
+
+                    <button class="btnSub" id="btnSub4"  formaction="/Home/Profissoes"@{temp = "Parque aquático"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnSub" id="btnSub5"  formaction="/Home/Profissoes"@{temp = "Tatuador"; } name="inputRamo" value="@temp">@temp</button>
+                    <button class="btnSub" id="btnSub6"  formaction="/Home/Profissoes"@{temp = "Floricultura"; } name="inputRamo" value="@temp">@temp</button><br>
+
+                    <button class="btnSub" onclick="mostrar();" formaction="/Home/Visit">←</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
